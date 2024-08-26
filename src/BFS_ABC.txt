@@ -1,0 +1,19 @@
+3
+5 6 1 3
+.....X
+.X.A..
+XXX..B
+.C..XX
+S...X.
+5 6 2 1
+....XX
+.X.A..
+XX...B
+XC..XX
+SXX.X.
+5 6 2 6
+....XX
+.X.A..
+XXB...
+XC.SXX
+.XX.X.
