@@ -8,6 +8,10 @@ public class Dial {
     static int[] resultMap = new int[6];
     static Scanner sc;
 
+//    // ((A + or - B) + n ) % n công tính khoảng cách di chuyển B -> A theo 2 chiều xuôi ngược
+//    int tongNguoc = ((A - B) + 12) % 12;
+//    int tongXuoi = ((B - A) + 12) % 12;
+
     public static void main(String[] args) throws FileNotFoundException {
         System.setIn(new FileInputStream("./src/Dial.txt"));
         sc = new Scanner(System.in);

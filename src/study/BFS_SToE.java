@@ -9,10 +9,10 @@ import java.util.Queue;
 
 public class BFS_SToE {
     static int row, col, strR, strC, endR, endC;
-    static Queue<Node> queue;
+    static Queue<Node> queue; // hàng đợi (First in first out)
     static String[][] map;
-    static int[][] distance;
-    static int[][] direction = {{1, 0}, {0, 1}, {-1, 0}, {0, -1}};
+    static int[][] distance; // visited (đánh dấu đi qua), hoặc khoảngcacsch tu xuat phat toi diem hien tai
+    static int[][] direction = {{1, 0}, {0, 1}, {-1, 0}, {0, -1}}; // hướng đi theo 4 chiều
     static BufferedReader bf;
 
     static class Node {
@@ -36,11 +36,9 @@ public class BFS_SToE {
         }
     }
 
-    //    queue = 1 , 2 [ 3, 3]
     private static void bfs() {
         Node node = new Node(strR, strC);
         queue.add(node);
-
         distance[strR][strC] = 1;
 
         while (!queue.isEmpty()) {
@@ -50,16 +48,13 @@ public class BFS_SToE {
                 nextX = curNode.x + direct[0];
                 nextY = curNode.y + direct[1];
 
-                if (nextX >= 0 && nextY >= 0 && nextX < row && nextY < col && !map[nextX][nextY].equals("X") && distance[nextX][nextY] == 0) {
-                    if (map[nextX][nextY].equals("E")) {
-                        distance[nextX][nextY] = distance[curNode.x][curNode.y] + 1;
-                        queue.clear();
-                        return;
-                    }
-
-                    queue.add(new Node(nextX, nextY));
-                    distance[nextX][nextY] = distance[curNode.x][curNode.y] + 1;
+                if(nextX < 0 || nextY < 0 || nextX >= row || nextY >= col || ("X").equals(map[nextX][nextY]) || distance[nextX][nextY] != 0) {
+                    continue;
                 }
+
+                distance[nextX][nextY] = distance[curNode.x][curNode.y] + 1;
+                if (map[nextX][nextY].equals("E")) return;
+                queue.add(new Node(nextX, nextY));
             }
         }
     }
