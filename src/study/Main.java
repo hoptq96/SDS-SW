@@ -6,5 +6,6 @@ public class Main {
         int a = 0;
         System.out.println("Test");
         System.out.println("Test");
+        int c = 1;
     }
 }
