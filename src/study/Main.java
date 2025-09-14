@@ -7,10 +7,5 @@ public class Main {
         int b = 0;
         int a = 1;
         System.out.println("Test");
-        System.out.println("Test");
-        System.out.println("Test");
-        System.out.println("Test");
-        int b = 0;
-        int a = 1;
     }
 }
