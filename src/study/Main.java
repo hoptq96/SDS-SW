@@ -5,10 +5,8 @@ public class Main {
         System.out.println("Test");
         int a = 1;
         int b = 0;
+
         int c = 1;
         int d = 1;
-        int e = 0;
-
-        int f = 1;
     }
 }
