@@ -8,5 +8,6 @@ public class Main {
         int b = 0;
         System.out.println("Test");
         int c = 1;
+        System.out.println("Test");
     }
 }
