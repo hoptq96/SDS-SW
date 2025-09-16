@@ -2,15 +2,16 @@ package study;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Test");
         int a = 1;
         int b = 0;
+        int c = 122;
+        int d = 122;
         System.out.println("Test");
+        System.out.println("Test2");
+        System.out.println("Test3");
         System.out.println("Test");
-        System.out.println("Test");
-        System.out.println("Test");
-        int c = 1;
-        int d = 1;
+        System.out.println("Test2");
+        System.out.println("Test3");
         System.out.println("Test");
         System.out.println("Test2");
         System.out.println("Test3");
