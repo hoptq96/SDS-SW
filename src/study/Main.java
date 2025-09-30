@@ -6,9 +6,10 @@ public class Main {
         int b = 0;
         int c = 122;
         int d = 122;
-        System.out.println("Test");
-
         int e = 122;
+        int d = 122;
+        
+        System.out.println("Test");
         System.out.println("Test5");
         System.out.println("Test6");
     }
