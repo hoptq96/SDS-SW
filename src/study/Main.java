@@ -7,7 +7,7 @@ public class Main {
         int c = 122;
         int d = 122;
         int e = 122;
-        
+
         System.out.println("Test");
         System.out.println("Test5");
         System.out.println("Test6");
